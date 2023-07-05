@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:  sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color: white;
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/netflix-image.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+    position: relative;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0px;
+}
+.logo{
+    width: 150px;
+    cursor: pointer;
+}
+nav button{
+    border: 0;
+    outline: 0;
+    background-color: #db0001;
+    color: white;
+    padding: 7px 20px;
+    font-size: 12px;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.language-button{
+ display: inline-flex;
+ align-items: center;
+ background: transparent;
+ border: 1px solid white;
+ padding: 7px 10px;
+}
+.language-button img{
+    width: 10px;
+    margin-left: 10px;
+}
+.sign-in{
+    padding: 9px 20px;
+}
+.header-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    margin-top: 100px;
+}
+.header-content h1{
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 600;
+    max-width: 650px;
+}
+.header-content h3{
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.header-content p{
+    font-size: 20px;
+}
+
+.email-signup{
+    background:transparent;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    overflow: hidden;
+}
+.email-signup input{
+    background: transparent;
+    flex: 1; 
+    border-width: 0.5px;
+    border-color: white;
+    margin-left: 20px;
+    margin-right: 20pxs;
+    padding: 20px;
+    border-radius: 4px;
+
+    
+
+}
+.email::placeholder{
+    font-size: 16px;
+    color: rgb(252, 252, 252);
+}
+.email-signup button{
+    margin-left: 5px;
+    background: #db0001;
+    border: 0;
+    outline: 0;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 17px 30px;
+    border-radius: 4px;
+
+}
+/*features*/
+.features{
+    padding: 50px 12%;
+    font-size: 22px;
+}
+.row{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+.text-col{
+ flex-basis: 50%;
+ margin-bottom: 20px;
+ 
+}
+.img-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+.img-col img{
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+.features h2{
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+/* faq */
+.faq{
+    padding: 10px 12%;
+    text-align: center;
+    font-size: 18px;
+}
+.faq h2{
+    font-weight: 500;
+    font-size: 40px;
+}
+.accordion{
+    margin: 16px auto;
+    width: 100%;
+    max-width: 750px;
+}
+.accordion li{
+    list-style: none;
+    padding: 5px;
+    width: 100%;
+}
+.accordion li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+label::after{
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+}
+input[type=radio]{
+    display: none;
+}
+.details{
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    
+}
+.accordion input[type="radio"]:checked + label + .details{
+    max-height: 600px;
+    padding: 30px 20px;
+}
+.accordion input[type="radio"]:checked + label::after{
+    transform: rotate(135deg);
+}
+.faq .email-signup{
+    max-width: 600px;
+    margin: 20px auto 60px;
+}
+.faq p{
+    font-size: 20px;
+    margin-top: 40px;
+}
+.footer{
+    padding: 50px 15% 10px;
+    border-top: 6px solid rgb(51, 51, 51);
+    color: #e0dede;
+}
+.footer h2{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.footer h2 span{
+    text-decoration: underline;
+}
+
+.footer .col{
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+.footer .col a{
+
+    display: block;
+    color: #e0dede;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.footer .row{
+    align-items: flex-start;
+    padding: 10px 0;
+}
+.footer .language-button{
+    color: white;
+    padding: 10px 20px;
+    border-radius: 3px;
+}
+
+.fa-sharp .fa-solid .fa-globe{
+    font-size: 24px;
+    color: #db0001;
+}
+.language-button i{
+    font-size: 16px;
+    margin-right: 4px;
+}
